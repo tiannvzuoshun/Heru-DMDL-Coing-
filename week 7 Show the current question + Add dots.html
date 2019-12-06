@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	
+	<header>
+	<h1>Quiz</h1>
+	<button id="end_btn" class="secondary">End Practicec</button>
+	</header>
+ 
+ <main>
+
+
+ 	<article class="card">
+ 		<h2 id="currentQuestionHeader"></h2>
+ 		<hr>
+ 		<p id="questionText"></p>
+ 		<ol id="listItems" type = "A">
+ 			 <li><label><input type="radio" name="option">script</label></li>
+ 			 <li><label><input type="radio" name="option">javascript</label></li>
+ 			  <li><label><input type="radio" name="option">include</label></li>
+ 			 <li><label><input type="radio" name="option">style</label></li>
+ 			 <!-- <li><label><input type="radio" name="option"><script></label></li>-->
+ 	   </ol>
+
+ 	<script type="text/javascript">
+
+//show the current question -  use query selectors to store the question element and the <ol> list element. 
+
+ 	const listItems = document.querySelector("#listItems"); 
+	for (var i = 0; i < listItems.length; i++)
+		{console.log `the current question is ${listItems[i]}`;
+	}
+
+// Attempt to loops steps give the template
+const listItems = document.querySelector("#listItems"); 
+
+// Create and append an `<li>`
+const li = document.createElement("ol"); 
+listItems.appendChild(li);
+
+//Create a `<label>` and append it inside the `<li>` you created
+const label = document.createElement("label"); 
+li.appendChild(label);
+
+//Create a `<input>` and append it inside of the `<label>`
+//Add Attributes to input so it looks like this `<input type="radio" name="options">`
+const input = document.createElement("input"); 
+input.setAttribute("type", "radio","name","options");
+label.appendChild(input);
+
+//Create and append the text inside of the `<label>`. Reminder that this would use `document.createTextNode("Your Text");`
+const checkbox = document.createElement("label"); 
+label.appendChild(checkbox); 
+
+ 	</script>	
+ 	</article>
+ 	</main>
+
+<!--Add dots -->
+
+ <footer>
+ 		<div id="progressDots">
+ 			<!-- <div></div> -->
+
+ 		</div>
+ 		<a href="report.html">View report</a>
+ 		
+ 		<!-- loop through each of the items and simple append an empty <div> -->
+ 	    
+        
+         <script type="text/javascript">
+   			
+   			//loop
+
+        	let progressDots = ["question1","question2","question3","question4","question5","question6","question7","question8"];
+
+			for (var i = 0; i < progressDots.length; i++){
+				console.log (`questions ${progressDots[i]}`)
+			}
+	 	  const progressDots = document.querySelector("#progressDots");
+	 	  
+	 	  // append an empty <div>
+	 	   
+        const div = document.createElement("div"); 
+         progressDots.appendChild("div");
+        </script>
+
+        <!-- I realize that here I could mess it up...If have nay problem, please let me know, I will fix it. Thank you!-->
+        
+        
+ 	
+ 	</div>
+ </footer>	
+
+</body>
+</html>

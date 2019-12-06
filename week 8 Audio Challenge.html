@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+
+
+
+<body>
+<div id="videoPlayer" class= "mp3">
+	<!-- dropdown will have the filename as values of each option -->
+	<select id="videoSelector">
+    		<option value="videoDownload/sound1.mp3">sound1</option>
+    		<option value="videoDownload/sound2.mp3">sound2</option>
+    		<option value="videoDownload/sound3.mp3">sound3</option>
+           </select>
+</div>
+	
+
+	<script type="text/javascript">
+
+		// connect to id :
+
+		const videoPlayer = document.querySelector ("#videoPlayer");
+
+
+		//Create am array of data object that stores the name of a song/sound 
+
+		let Music = [
+		{
+		title: "sound 1",
+		file: "videoDownload/sound1.mp3"
+		},
+		{
+		title: "sound 2",
+		file: "videoDownload/sound2.mp3"
+		}
+		{
+		title: "sound 3",
+		file: "videoDownload/sound3.mp3"
+		}
+		]
+   
+   //Currently the dropdown is looks like this
+          
+         /* <select id="videoSelector">
+    		<option value="videoDownload/sound1.mp3">sound1</option>
+           </select>
+		*/
+
+//  Delete all the`<option>` tags
+// loop the data array and 
+let playMusic = () => {
+     for (option in data.results){
+    
+     	const  item = document.createElement ("div");
+     	videoPlayer. appendChild (item); 
+
+//create select inside of item  
+ 		const  select = document.createElement ("select");
+     	item. appendChild (item); 
+
+    //add option inside of select
+    //use `setAttribute()` to create the value attribute 
+    //add the file location
+    //add the text inside of the option using `innerHTML`
+		const option = document.createElement ("select");
+		option.setAttribute ("value", "folder/fileName");
+		option.innerHTML = "sound1";
+     	item. appendChild (option);
+     }
+ }
+  //Remove the decimals by using `Math.round`
+    console.log(Math.round(16.446666666666665));
+
+  //create a range slider for your volume with an id
+  <input type = "range" min ="0" max = "100" value = "50" id="volumeRange">;
+  
+  //store the element using querySelector
+  const volumeRange = document.querySelector ("#volumeRange");
+  
+ // Create a listener for the range slider and add a callback function called `updateVolume`
+ volumeRange.addEventListener("updateVolume", setVolume);
+
+
+// In the `updateVolume` function you will need to set the volume. 
+let setVolume = () => {
+	document.getElementById("myVideo");
+	volumeRange.update();
+}
+
+// using `event.target.value`
+let getVolume = (value) => { 
+  volume.innerHTML = event.target.value;
+} 
+
+// For the 5 step to set from 0-100, may I work on this way? 
+
+let getVolume = () => { 
+  alert(vid.volume);
+  vid.volume = 50;
+} 
+  
+let setminVolume = () => { 
+  min.volume = 0;
+} 
+  
+let setmaxVolume = () => { 
+  max.volume = 100;
+} 
+	</script>
+
+</body>
+</html>

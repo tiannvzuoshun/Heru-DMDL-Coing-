@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	
+	<!--locate the div with the id named container using querySelector-->
+	<!--create a for loop that loops sneakers array-->
+	<!--INSIDE the loop create an h2 element and add the brand name inside of it-->
+	<div id="container"></div>
+	<script type="text/javascript" class="card" name="">
+         	 
+          
+          const containerEle = document.querySelector("#container");
+
+          let sneakers = [
+			{
+				brand: "Puma",
+				colors: ["red", "black", "white"]
+			},
+			{
+				brand: "Nike",
+				colors: ["orange", "green"]
+			},
+			{
+				brand: "Adidas",
+				colors: ["purple", "pink", "white"]
+			}
+		    ]
+
+		//add another for loop INSIDE of the sneakers loop and loop all the colors.
+		//INSIDE the nest loop create button elements
+		//add the color value into each button.
+		
+		for (var i=0; i<sneakers.length; i++){
+     	console.log (sneaker[i].colors);
+     	}
+		//Please check here, console.log (sneaker[i].colors), that seems it don't loop all the colors.
+		
+
+     	let nested = ["Puma","Nike","Adidas"];
+		console.log (nested);
+		for (var i=0; i<nested.length; i++){
+			console.log(nested[i]);
+		}
+		
+		let nestedObjects = [
+			{
+				brand: "Puma",
+				colors: ["red", "black", "white"]
+			},
+			{
+				brand: "Nike",
+				colors: ["orange", "green"]
+			},
+			{
+				brand: "Adidas",
+				colors: ["purple", "pink", "white"]
+			}
+		    ]
+		console.log(nestedObjects[2],colors[1]);
+		for (var i=0; i<nestedObjects.length; i++){
+			console.log(nestedObjects[i].colors);
+		}
+		for (var x=0; x<nestedObjects.length; x++){
+			console.log(nestedObjects[1].colors[x]);
+		}
+
+    
+
+       
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+header {
+	background-color: white;
+			height: 50px;
+			padding: 20px;
+}
+ header #Quiz {
+ 	        float:left;
+			color: black;
+			line-height: 50px;
+			font-size: 36px;
+		}
+ 
+ header #headerActions {
+ 		float:right;
+			line-height: 50px;
+			border: none;
+   color: blue;
+  text-align: center;
+  text-decoration-color:green;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer
+ }
+
+.box
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	padding: 10px;
+	box-sizing: border-box;
+	background:#fff;
+	border-radius: 10px;
+	box-shadow: 0 5px 15px rgba(0,0,0,.5);
+	display: flex;
+	transition: .5s;
+}
+.box:hover
+{
+	box-shadow: 0 15px 30px rgba(0,0,0,.5);
+	}
+.box .content
+{
+	padding-left: 20px;
+}
+.button {
+  background-color: white; /* Green */
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button1 {border-radius: 50%;
+     background-color: #E3C13B; 
+  }
+.button2 {border-radius: 50%;
+background-color: #B36EC2;}
+.button3 {border-radius: 50%;
+background-color: #78AEC2;}
+.button4 {border-radius: 50%;}
+.button5 {border-radius: 50%;}
+.button6 {border-radius: 50%;}
+.button7 {border-radius: 50%;}
+
+
+footer{
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:50px;   /* Height of the footer */
+   background:pink;
+		}
+
+footer {list-style-type: none;
+	margin: 0;
+	padding:0;
+	display:flex;
+  flex-direction: row;
+  align-items: baseline;
+   }
+
+.container .footerActions{
+	flex-direction: row;
+}
+
+
+

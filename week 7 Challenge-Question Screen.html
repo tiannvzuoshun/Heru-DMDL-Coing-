@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta  name="viewport" content="width=device-width, initial-scale=1">
+	<title>Quiz Topic Selection</title>
+</head>
+
+
+<body>
+<header>
+  <!--Question count and current location -->
+	<h2 id="currentQuestionHeader" name="Question 1 of 8"></h2>
+	
+	<script type="text/javascript">
+  
+  let currentQuestionHeader = "Question 1 of 8"
+	const currentQuestionHeaderEle = document.querySelector("#currentQuestionHeader"); 
+		currentQuestionHeaderEle.innerHTML = `Let's the current question is ${currentQuestionHeader}`;
+	
+	
+    
+   // Now we need to make the 1 and 8 pull from your data
+          let currentQuestion = 1;
+          let activeQuestions = [
+    	{
+    		question: "HTML Question A",
+    		response: ["Option A1","Option A2","Option A3","Option A4"]
+    	},
+    	{
+    		question: "HTML Question B",
+    		response: ["Option B1","Option B2","Option B3","Option B4"]
+    	},
+    	{
+    		question: "HTML Question C",
+    		response: ["Option C1","Option C2","Option C3","Option C4"]
+    	},
+    	{
+    		question: "HTML Question D",
+    		response: ["Option D1","Option D2","Option D3","Option D4"]
+    	},
+    	{
+    		question: "HTML Question E",
+    		response: ["Option E1","Option E2","Option E3","Option E4"]
+    	},
+    	{
+    		question: "HTML Question F",
+    		response: ["Option F1","Option F2","Option F3","Option F4"]
+    	},
+    	{
+    		question: "HTML Question G",
+    		response: ["Option G1","Option G2","Option G3","Option G4"]
+    	},
+    	{
+    		question: "HTML Question H",
+    		response: ["Option H1","Option H2","Option H3","Option H4"]
+    	}
+    ];
+
+// Here are a little confused to me:
+
+//1 Now you have a current question number and an array of questions. All you need to do now is go back to the "Question 1 of 8" sting you created and swap out the number with what you know.  Remember that we are able to mix strings and variables by doing something like this: `let combinedString = `I am a string and ${variableName}``
+
+// 2 Your string will have to insert 2 values. The first is the current question number which we named `currentQuestion`. The second is the length of the question array.  
+
+//Should I do this way?(1+2):
+let combineString =  `I am a string and ${combineString}`
+       console.log (currentQuestion[2];response[1]);
+       for (var i =0; i < combineString.length; i++){
+         console.log (currentQuestion[i];response);}
+    
+    </script>
+
+
+</header>
+</body>
+</html>
+
