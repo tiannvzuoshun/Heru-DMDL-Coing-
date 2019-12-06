@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+</head>
+<body>	
+	<h1 id="OpenWeather">Open Weather</h1>
+	<script type="text/javascript">
+
+ // this is my vpikey ab3354e7731c059181b0bbc921d88150
+// this is url api.openweathermap.org/data/2.5/weather?q=London
+
+const url = 'https://api.openweathermap.org/data/2.5/weather?q=London';
+fetch (url)
+.then ((response) => {
+	return response.json();
+})
+.then((data) => {
+	console.log (data);
+});
+
+//connect to id: apiKeys 
+const apiKeys = document.querySelector("#apiKeys");
+
+//build blocks for each city.list. 
+   //<div class = "cityList">
+   //<h1>title</h1>
+   //<p>info</p>
+   //<h2>locations</h2>
+   //</div>
+
+
+   let getData = () => {
+   	for (cityList in data.results) {
+   		                                                                                  
+   		const div = document.createElement("div");
+   		div.className = "cityList";
+
+   		const title = document.createElement("h1");
+   		title.className = "title";
+
+   		const info = document.createElement("p");
+   		info.className = "info";
+
+   		const h2 = document.createElement("h2");
+   		h2.className = "locations";
+   }
+
+  //appending into a <div class = "div"></div> 
+  div.appendChild(cityList);
+  div.appendChild(title);
+  div.appendChild(info);
+  div.appendChild(locations);
+
+  //appending into <div id = "apiKeys"></div>
+  apiKeys.appendChild(div);  
+	</script>
+
+</body>
+</html>
